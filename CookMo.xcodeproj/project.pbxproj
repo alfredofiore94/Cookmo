@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F878DA828A806A300CD6ABE /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F878DA728A806A300CD6ABE /* Home.swift */; };
+		9F878DAA28A807A500CD6ABE /* Categorie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F878DA928A807A500CD6ABE /* Categorie.swift */; };
+		9F878DAC28A807C900CD6ABE /* Bilancia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F878DAB28A807C900CD6ABE /* Bilancia.swift */; };
+		9F878DAE28A808EF00CD6ABE /* Cerca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F878DAD28A808EF00CD6ABE /* Cerca.swift */; };
 		9F8BBC8A28A6AC380026F02A /* CookMoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8BBC8928A6AC380026F02A /* CookMoApp.swift */; };
 		9F8BBC8C28A6AC380026F02A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8BBC8B28A6AC380026F02A /* ContentView.swift */; };
 		9F8BBC8E28A6AC3A0026F02A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F8BBC8D28A6AC3A0026F02A /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F878DA728A806A300CD6ABE /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		9F878DA928A807A500CD6ABE /* Categorie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categorie.swift; sourceTree = "<group>"; };
+		9F878DAB28A807C900CD6ABE /* Bilancia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bilancia.swift; sourceTree = "<group>"; };
+		9F878DAD28A808EF00CD6ABE /* Cerca.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cerca.swift; sourceTree = "<group>"; };
 		9F8BBC8628A6AC380026F02A /* CookMo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookMo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F8BBC8928A6AC380026F02A /* CookMoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookMoApp.swift; sourceTree = "<group>"; };
 		9F8BBC8B28A6AC380026F02A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +61,10 @@
 			children = (
 				9F8BBC8928A6AC380026F02A /* CookMoApp.swift */,
 				9F8BBC8B28A6AC380026F02A /* ContentView.swift */,
+				9F878DA928A807A500CD6ABE /* Categorie.swift */,
+				9F878DAB28A807C900CD6ABE /* Bilancia.swift */,
+				9F878DA728A806A300CD6ABE /* Home.swift */,
+				9F878DAD28A808EF00CD6ABE /* Cerca.swift */,
 				9F8BBC8D28A6AC3A0026F02A /* Assets.xcassets */,
 				9F8BBC8F28A6AC3A0026F02A /* Preview Content */,
 			);
@@ -138,6 +150,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F8BBC8C28A6AC380026F02A /* ContentView.swift in Sources */,
+				9F878DAC28A807C900CD6ABE /* Bilancia.swift in Sources */,
+				9F878DAE28A808EF00CD6ABE /* Cerca.swift in Sources */,
+				9F878DAA28A807A500CD6ABE /* Categorie.swift in Sources */,
+				9F878DA828A806A300CD6ABE /* Home.swift in Sources */,
 				9F8BBC8A28A6AC380026F02A /* CookMoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
