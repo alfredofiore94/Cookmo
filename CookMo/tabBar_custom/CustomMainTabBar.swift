@@ -10,6 +10,7 @@ import SwiftUI
 struct CustomMainTabBar: View {
     
     let listaTabs: [CustomTabBarItem]
+    let coloreSfondo: Color
     
     var body: some View {
         HStack{
@@ -18,6 +19,7 @@ struct CustomMainTabBar: View {
                 tab in tabView(tabItem: tab)
             }
         }
+        .background(coloreSfondo)
     }
 }
 
@@ -50,14 +52,15 @@ struct CustomTabBarItem: Hashable{
 struct CustomMainTabBar_Previews: PreviewProvider {
     
     static let tabs: [CustomTabBarItem] = [
-        CustomTabBarItem(nomeIcona: "Bilancia", titolo: "bilancia_img", colore: Color.red, coloreSfondo: Color.gray.opacity(0.2)),
-        CustomTabBarItem(nomeIcona: "Bilancia", titolo: "bilancia_img", colore: Color.red, coloreSfondo: Color.gray.opacity(0.2)),
-        CustomTabBarItem(nomeIcona: "Bilancia", titolo: "bilancia_img", colore: Color.red,  coloreSfondo: Color.gray.opacity(0.2))
+        CustomTabBarItem(nomeIcona: "bilancia_img", titolo: "Bilancia", colore: Color.white, coloreSfondo: Color.white.opacity(0)),
+        CustomTabBarItem(nomeIcona: "categorie_img", titolo: "Categorie", colore: Color.white, coloreSfondo: Color.white.opacity(0)),
+        CustomTabBarItem(nomeIcona: "home_img", titolo: "Home", colore: Color.white,  coloreSfondo: Color.white.opacity(0)),
+        CustomTabBarItem(nomeIcona: "cerca_img", titolo: "Cerca", colore: Color.white,  coloreSfondo: Color.white.opacity(0))
     ]
     
     
     static var previews: some View {
-        CustomMainTabBar(listaTabs: tabs)
+        CustomMainTabBar(listaTabs: tabs, coloreSfondo: Color(red: 227 / 255, green: 124 / 255, blue: 81 / 255))
     }
 }
 
