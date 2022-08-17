@@ -29,7 +29,8 @@ struct CustomMainTabBar: View {
                     }
             }
         }
-        .background(coloreSfondo)
+        .padding(6)
+        .background(coloreSfondo.ignoresSafeArea(edges: .bottom))
         
     }
 }

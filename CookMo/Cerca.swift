@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Cerca: View {
     var body: some View {
-        Text("Cerca page")
+        Text("Cerca page").frame(maxWidth: .infinity)
     }
 }
 
