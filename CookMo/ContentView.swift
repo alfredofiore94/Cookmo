@@ -15,28 +15,21 @@ struct ContentView: View {
     
     var body: some View {
         CustomMainTabBarContainer(tabSelezionato: $tabSelezionato){
+            Home()
+                .customTabBarItem(tab: CustomTabBarItem(nomeIcona: "home_img", titolo: "Home", colore: Color.white,  coloreSfondo: Color.white.opacity(0)), tabSelect: $tabSelezionato)
             Bilancia()
                 .customTabBarItem(tab: CustomTabBarItem(nomeIcona: "bilancia_img", titolo: "Bilancia", colore: Color.white, coloreSfondo: Color.white.opacity(0)), tabSelect: $tabSelezionato)
             Categorie()
                 .customTabBarItem(tab: CustomTabBarItem(nomeIcona: "categorie_img", titolo: "Categorie", colore: Color.white, coloreSfondo: Color.white.opacity(0)), tabSelect: $tabSelezionato)
-            Home()
-                .customTabBarItem(tab: CustomTabBarItem(nomeIcona: "home_img", titolo: "Home", colore: Color.white,  coloreSfondo: Color.white.opacity(0)), tabSelect: $tabSelezionato)
+            
             Cerca()
                 .customTabBarItem(tab: CustomTabBarItem(nomeIcona: "cerca_img", titolo: "Cerca", colore: Color.white,  coloreSfondo: Color.clear), tabSelect: $tabSelezionato)
-                .frame(maxWidth: .infinity)
         }
         
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    
-//    static let tabs: [CustomTabBarItem] = [
-//        CustomTabBarItem(nomeIcona: "bilancia_img", titolo: "Bilancia", colore: Color.white, coloreSfondo: Color.white.opacity(0)),
-//        CustomTabBarItem(nomeIcona: "categorie_img", titolo: "Categorie", colore: Color.white, coloreSfondo: Color.white.opacity(0)),
-//        CustomTabBarItem(nomeIcona: "home_img", titolo: "Home", colore: Color.white,  coloreSfondo: Color.white.opacity(0)),
-//        CustomTabBarItem(nomeIcona: "cerca_img", titolo: "Cerca", colore: Color.white,  coloreSfondo: Color.clear)
-//    ]
     
     static var previews: some View {
         
