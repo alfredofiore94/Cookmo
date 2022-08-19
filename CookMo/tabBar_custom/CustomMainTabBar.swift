@@ -38,15 +38,21 @@ struct CustomMainTabBar: View {
 extension CustomMainTabBar {
     
     private func tabView(tabItem: CustomTabBarItem) -> some View {
-        VStack{
+        VStack(alignment: .center)  {
             Image(tabItem.nomeIcona)
                 .renderingMode(.template)
+            
             Text(tabItem.titolo)
+                .font(.custom("SF Pro Text", size: 15))
+                .multilineTextAlignment(.center)
+            Spacer()
         }
         .foregroundColor(tabSelezionato == tabItem ? coloreSelezione : tabItem.colore)
-        .padding(.vertical, 10)
-        .frame(maxWidth: .infinity)
+        .padding(.all, 10)
+        .frame( maxWidth: .infinity)
+        .frame(height: 102)
         .background(tabItem.coloreSfondo)
+
         
     }
     
