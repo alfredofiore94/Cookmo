@@ -53,7 +53,7 @@ struct RicettaCard: View {
                     
                 }
                 .font(.system(size: 12))
-                .padding(.trailing, 70)
+                .padding(.trailing, 50)
                 .padding(.top, 40)
                 
             }
