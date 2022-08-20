@@ -30,7 +30,7 @@ struct CustomMainTabBarContainer<Content:View>: View {
                 contenuto
             }
             Spacer()
-            CustomMainTabBar(listaTabs: tabs, tabSelezionato: $tabSelezionato, coloreSfondo: Color(red: 227 / 255, green: 124 / 255, blue: 81 / 255), coloreSelezione: Color.blue)
+            CustomMainTabBar(listaTabs: tabs, tabSelezionato: $tabSelezionato, coloreSfondo: ContentView.coloreCosmo, coloreSelezione: Color.blue)
         }
         
         .onPreferenceChange(CustomTabBarItemsPreferenceKey.self, perform: { value in self.tabs = value })

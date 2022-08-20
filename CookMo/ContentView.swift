@@ -9,6 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     
+    static let coloreCosmo: Color = Color(red: 227 / 255, green: 124 / 255, blue: 81 / 255)
+    static let coloreMoveo: Color = Color(red: 220 / 255, green: 57 / 255, blue: 71 / 255)
+    
     @State private var selection: String = "home"
     
     @State private var tabSelezionato: CustomTabBarItem = CustomTabBarItem(nomeIcona: "home_img", titolo: "Home", colore: Color.white,  coloreSfondo: Color.white.opacity(0))
