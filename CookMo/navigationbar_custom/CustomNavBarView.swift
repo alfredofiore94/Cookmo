@@ -20,30 +20,12 @@ struct CustomNavBarView: View {
     
     var body: some View {
         HStack{
-            Button(action: {
-                
-            }, label: {
-                Image(systemName: "chevron.left")
-                    .foregroundColor(coloreBackButton)
-            })
+            backButton
             Spacer()
-            VStack{
-                Text(titolo)
-                    .font(.title)
-                    .fontWeight(.semibold)
-                    .foregroundColor(coloreTitolo)
-                if let sottotitolo = sottotitolo {
-                    Text(sottotitolo)
-                    .foregroundColor(coloreSottotitolo)
-                }
-                
-            }
+            textTitles
             Spacer()
-            Button(action: {
-                
-            }, label: {
-                Image(systemName: "chevron.left")
-            }).opacity(0.0)
+            backButton
+                .opacity(0.0)
         }
         .padding()
         .accentColor(.white)
@@ -55,7 +37,28 @@ struct CustomNavBarView: View {
 }
 
 extension CustomNavBarView {
+    private var backButton: some View {
+        Button(action: {
+            
+        }, label: {
+            Image(systemName: "chevron.left")
+                .foregroundColor(coloreBackButton)
+        })
+    }
     
+    private var textTitles: some View {
+        VStack{
+            Text(titolo)
+                .font(.title)
+                .fontWeight(.semibold)
+                .foregroundColor(coloreTitolo)
+            if let sottotitolo = sottotitolo {
+                Text(sottotitolo)
+                .foregroundColor(coloreSottotitolo)
+            }
+            
+        }
+    }
 }
 
 struct CustomNavBarView_Previews: PreviewProvider {
