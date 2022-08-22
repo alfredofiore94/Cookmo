@@ -20,6 +20,7 @@
 		9F8BBC8C28A6AC380026F02A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8BBC8B28A6AC380026F02A /* ContentView.swift */; };
 		9F8BBC8E28A6AC3A0026F02A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F8BBC8D28A6AC3A0026F02A /* Assets.xcassets */; };
 		9F8BBC9128A6AC3A0026F02A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F8BBC9028A6AC3A0026F02A /* Preview Assets.xcassets */; };
+		9FC609CB28B3D4A500801F3A /* CustomNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC609CA28B3D4A500801F3A /* CustomNavBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		9F8BBC8B28A6AC380026F02A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9F8BBC8D28A6AC3A0026F02A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F8BBC9028A6AC3A0026F02A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9FC609CA28B3D4A500801F3A /* CustomNavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,14 @@
 			path = HomePage;
 			sourceTree = "<group>";
 		};
+		9F73BE5028B3CA4400E42764 /* navigationbar_custom */ = {
+			isa = PBXGroup;
+			children = (
+				9FC609CA28B3D4A500801F3A /* CustomNavBarView.swift */,
+			);
+			path = navigationbar_custom;
+			sourceTree = "<group>";
+		};
 		9F8BBC7D28A6AC380026F02A = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +97,7 @@
 		9F8BBC8828A6AC380026F02A /* CookMo */ = {
 			isa = PBXGroup;
 			children = (
+				9F73BE5028B3CA4400E42764 /* navigationbar_custom */,
 				9F73BE4928B39FD800E42764 /* HomePage */,
 				9F519FCE28AABE2300276CD1 /* tabBar_custom */,
 				9F8BBC8928A6AC380026F02A /* CookMoApp.swift */,
@@ -189,6 +200,7 @@
 				9F73BE4D28B3A05F00E42764 /* ListaSpesa.swift in Sources */,
 				9F73BE4F28B3A07200E42764 /* RicettaCard.swift in Sources */,
 				9F519FD028AABE4E00276CD1 /* CustomMainTabBar.swift in Sources */,
+				9FC609CB28B3D4A500801F3A /* CustomNavBarView.swift in Sources */,
 				9F878DAA28A807A500CD6ABE /* Categorie.swift in Sources */,
 				9F8BBC8A28A6AC380026F02A /* CookMoApp.swift in Sources */,
 			);
