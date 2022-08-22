@@ -17,7 +17,7 @@ struct ContentView: View {
     @State private var tabSelezionato: CustomTabBarItem = CustomTabBarItem(nomeIcona: "home_img", titolo: "Home", colore: Color.white,  coloreSfondo: Color.white.opacity(0))
     
     var body: some View {
-        CustomMainTabBarContainer(tabSelezionato: $tabSelezionato){
+        CustomMainTabBarContainer(tabSelezionato: $tabSelezionato, coloreSfondo: ContentView.coloreCosmo, coloreSelezione: Color.blue){
             
             Bilancia()
                 .customTabBarItem(tab: CustomTabBarItem(nomeIcona: "bilancia_img", titolo: "Bilancia", colore: Color.white, coloreSfondo: Color.white.opacity(0)), tabSelect: $tabSelezionato)
