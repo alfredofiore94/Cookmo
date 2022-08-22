@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Bilancia: View {
     var body: some View {
-        Text("Bilancia pagina")
+        Text("Bilancia pagina").frame(maxWidth: .infinity)
     }
 }
 

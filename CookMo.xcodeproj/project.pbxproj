@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F519FD028AABE4E00276CD1 /* CustomMainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F519FCF28AABE4E00276CD1 /* CustomMainTabBar.swift */; };
 		9F878DA828A806A300CD6ABE /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F878DA728A806A300CD6ABE /* Home.swift */; };
 		9F878DAA28A807A500CD6ABE /* Categorie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F878DA928A807A500CD6ABE /* Categorie.swift */; };
 		9F878DAC28A807C900CD6ABE /* Bilancia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F878DAB28A807C900CD6ABE /* Bilancia.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F519FCF28AABE4E00276CD1 /* CustomMainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMainTabBar.swift; sourceTree = "<group>"; };
 		9F878DA728A806A300CD6ABE /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		9F878DA928A807A500CD6ABE /* Categorie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categorie.swift; sourceTree = "<group>"; };
 		9F878DAB28A807C900CD6ABE /* Bilancia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bilancia.swift; sourceTree = "<group>"; };
@@ -40,6 +42,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F519FCE28AABE2300276CD1 /* tabBar_custom */ = {
+			isa = PBXGroup;
+			children = (
+				9F519FCF28AABE4E00276CD1 /* CustomMainTabBar.swift */,
+			);
+			path = tabBar_custom;
+			sourceTree = "<group>";
+		};
 		9F8BBC7D28A6AC380026F02A = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +69,7 @@
 		9F8BBC8828A6AC380026F02A /* CookMo */ = {
 			isa = PBXGroup;
 			children = (
+				9F519FCE28AABE2300276CD1 /* tabBar_custom */,
 				9F8BBC8928A6AC380026F02A /* CookMoApp.swift */,
 				9F8BBC8B28A6AC380026F02A /* ContentView.swift */,
 				9F878DA928A807A500CD6ABE /* Categorie.swift */,
@@ -152,6 +163,7 @@
 				9F8BBC8C28A6AC380026F02A /* ContentView.swift in Sources */,
 				9F878DAC28A807C900CD6ABE /* Bilancia.swift in Sources */,
 				9F878DAE28A808EF00CD6ABE /* Cerca.swift in Sources */,
+				9F519FD028AABE4E00276CD1 /* CustomMainTabBar.swift in Sources */,
 				9F878DAA28A807A500CD6ABE /* Categorie.swift in Sources */,
 				9F878DA828A806A300CD6ABE /* Home.swift in Sources */,
 				9F8BBC8A28A6AC380026F02A /* CookMoApp.swift in Sources */,
