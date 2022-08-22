@@ -13,14 +13,14 @@ struct CustomMainTabBarContainer<Content:View>: View {
     let contenuto: Content
     
     @State private var tabs: [CustomTabBarItem] = []
-//    let coloreSfondo: Color
-//    let coloreSelezione: Color
+    var coloreSfondo: Color
+    var coloreSelezione: Color 
     
-    init(tabSelezionato: Binding<CustomTabBarItem>, @ViewBuilder contenuto: () -> Content){
+    init(tabSelezionato: Binding<CustomTabBarItem>, coloreSfondo: Color, coloreSelezione: Color, @ViewBuilder contenuto: () -> Content){
         self._tabSelezionato = tabSelezionato
         self.contenuto = contenuto()
-//        self.coloreSfondo = coloreSfondo
-//        self.coloreSelezione = coloreSelezione
+        self.coloreSfondo = coloreSfondo
+        self.coloreSelezione = coloreSelezione
     }
 
     
@@ -30,7 +30,7 @@ struct CustomMainTabBarContainer<Content:View>: View {
                 contenuto
             }
             Spacer()
-            CustomMainTabBar(listaTabs: tabs, tabSelezionato: $tabSelezionato, coloreSfondo: Color(red: 227 / 255, green: 124 / 255, blue: 81 / 255), coloreSelezione: Color.blue)
+            CustomMainTabBar(listaTabs: tabs, tabSelezionato: $tabSelezionato, coloreSfondo: coloreSfondo, coloreSelezione: coloreSelezione)
         }
         
         .onPreferenceChange(CustomTabBarItemsPreferenceKey.self, perform: { value in self.tabs = value })
@@ -51,7 +51,7 @@ struct CustomMainTabBarContainer_Previews: PreviewProvider {
     ]
     
     static var previews: some View {
-        CustomMainTabBarContainer(tabSelezionato: .constant(tabs[2])){
+        CustomMainTabBarContainer(tabSelezionato: .constant(tabs[2]), coloreSfondo: ContentView.coloreCosmo, coloreSelezione:  ContentView.coloreMoveo){
             Color.blue
         }
     }
