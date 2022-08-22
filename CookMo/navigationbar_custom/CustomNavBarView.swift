@@ -9,21 +9,14 @@ import SwiftUI
 
 struct CustomNavBarView: View {
     
-    var coloreSfondo: Color
-    var coloreTesti: Color
-    var titolo: String
-    var coloreTitolo: Color
-    var sottotitolo: String
-    var coloreSottotitolo: Color
+    @State var coloreSfondo: Color
+    @State var coloreTesti: Color
+    @State var titolo: String = ""
+    @State var coloreTitolo: Color?
+    @State var sottotitolo: String? = ""
+    @State var coloreSottotitolo: Color?
+    @State var coloreBackButton: Color?
     
-    init(coloreSfondo: Color, coloreTesti: Color , titolo: String, _ coloreTitolo: Color, sottotitolo: String, _ coloreSottotitolo: Color){
-        self.coloreSfondo = coloreSfondo
-        self.coloreTesti = coloreTesti
-        self.titolo = titolo
-        self.coloreTitolo = coloreTitolo
-        self.sottotitolo = sottotitolo
-        self.coloreSottotitolo = coloreSottotitolo
-    }
     
     var body: some View {
         HStack{
@@ -31,6 +24,7 @@ struct CustomNavBarView: View {
                 
             }, label: {
                 Image(systemName: "chevron.left")
+                    .foregroundColor(coloreBackButton)
             })
             Spacer()
             VStack{
@@ -38,8 +32,11 @@ struct CustomNavBarView: View {
                     .font(.title)
                     .fontWeight(.semibold)
                     .foregroundColor(coloreTitolo)
-                Text(sottotitolo)
+                if let sottotitolo = sottotitolo {
+                    Text(sottotitolo)
                     .foregroundColor(coloreSottotitolo)
+                }
+                
             }
             Spacer()
             Button(action: {
@@ -64,7 +61,7 @@ extension CustomNavBarView {
 struct CustomNavBarView_Previews: PreviewProvider {
     static var previews: some View {
         VStack{
-            CustomNavBarView(coloreSfondo: Color.yellow, coloreTesti: .white, titolo: "Titolo sono", .red, sottotitolo: "sottotilo da inserire qui", .green)
+            CustomNavBarView(coloreSfondo: Color.blue, coloreTesti: .white, titolo: "Titolo sono", sottotitolo: "sottotilo da inserire qui")
             Spacer()
         }
     }
