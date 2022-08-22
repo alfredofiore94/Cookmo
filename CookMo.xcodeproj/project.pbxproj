@@ -8,7 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9F519FD028AABE4E00276CD1 /* CustomMainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F519FCF28AABE4E00276CD1 /* CustomMainTabBar.swift */; };
-		9F878DA828A806A300CD6ABE /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F878DA728A806A300CD6ABE /* Home.swift */; };
+		9F73BE4528B39F5B00E42764 /* CustomMainTabBarContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F73BE4428B39F5B00E42764 /* CustomMainTabBarContainer.swift */; };
+		9F73BE4728B39FA000E42764 /* CustomTabBarItemsPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F73BE4628B39FA000E42764 /* CustomTabBarItemsPreferenceKey.swift */; };
+		9F73BE4B28B3A00E00E42764 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F73BE4A28B3A00E00E42764 /* Home.swift */; };
+		9F73BE4D28B3A05F00E42764 /* ListaSpesa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F73BE4C28B3A05F00E42764 /* ListaSpesa.swift */; };
+		9F73BE4F28B3A07200E42764 /* RicettaCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F73BE4E28B3A07200E42764 /* RicettaCard.swift */; };
 		9F878DAA28A807A500CD6ABE /* Categorie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F878DA928A807A500CD6ABE /* Categorie.swift */; };
 		9F878DAC28A807C900CD6ABE /* Bilancia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F878DAB28A807C900CD6ABE /* Bilancia.swift */; };
 		9F878DAE28A808EF00CD6ABE /* Cerca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F878DAD28A808EF00CD6ABE /* Cerca.swift */; };
@@ -20,7 +24,11 @@
 
 /* Begin PBXFileReference section */
 		9F519FCF28AABE4E00276CD1 /* CustomMainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMainTabBar.swift; sourceTree = "<group>"; };
-		9F878DA728A806A300CD6ABE /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		9F73BE4428B39F5B00E42764 /* CustomMainTabBarContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMainTabBarContainer.swift; sourceTree = "<group>"; };
+		9F73BE4628B39FA000E42764 /* CustomTabBarItemsPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarItemsPreferenceKey.swift; sourceTree = "<group>"; };
+		9F73BE4A28B3A00E00E42764 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		9F73BE4C28B3A05F00E42764 /* ListaSpesa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaSpesa.swift; sourceTree = "<group>"; };
+		9F73BE4E28B3A07200E42764 /* RicettaCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RicettaCard.swift; sourceTree = "<group>"; };
 		9F878DA928A807A500CD6ABE /* Categorie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categorie.swift; sourceTree = "<group>"; };
 		9F878DAB28A807C900CD6ABE /* Bilancia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bilancia.swift; sourceTree = "<group>"; };
 		9F878DAD28A808EF00CD6ABE /* Cerca.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cerca.swift; sourceTree = "<group>"; };
@@ -46,8 +54,18 @@
 			isa = PBXGroup;
 			children = (
 				9F519FCF28AABE4E00276CD1 /* CustomMainTabBar.swift */,
+				9F73BE4428B39F5B00E42764 /* CustomMainTabBarContainer.swift */,
+				9F73BE4628B39FA000E42764 /* CustomTabBarItemsPreferenceKey.swift */,
 			);
 			path = tabBar_custom;
+			sourceTree = "<group>";
+		};
+		9F73BE4928B39FD800E42764 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				9F73BE4A28B3A00E00E42764 /* Home.swift */,
+			);
+			path = HomePage;
 			sourceTree = "<group>";
 		};
 		9F8BBC7D28A6AC380026F02A = {
@@ -69,15 +87,17 @@
 		9F8BBC8828A6AC380026F02A /* CookMo */ = {
 			isa = PBXGroup;
 			children = (
+				9F73BE4928B39FD800E42764 /* HomePage */,
 				9F519FCE28AABE2300276CD1 /* tabBar_custom */,
 				9F8BBC8928A6AC380026F02A /* CookMoApp.swift */,
 				9F8BBC8B28A6AC380026F02A /* ContentView.swift */,
 				9F878DA928A807A500CD6ABE /* Categorie.swift */,
 				9F878DAB28A807C900CD6ABE /* Bilancia.swift */,
-				9F878DA728A806A300CD6ABE /* Home.swift */,
 				9F878DAD28A808EF00CD6ABE /* Cerca.swift */,
 				9F8BBC8D28A6AC3A0026F02A /* Assets.xcassets */,
 				9F8BBC8F28A6AC3A0026F02A /* Preview Content */,
+				9F73BE4C28B3A05F00E42764 /* ListaSpesa.swift */,
+				9F73BE4E28B3A07200E42764 /* RicettaCard.swift */,
 			);
 			path = CookMo;
 			sourceTree = "<group>";
@@ -161,11 +181,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F8BBC8C28A6AC380026F02A /* ContentView.swift in Sources */,
+				9F73BE4728B39FA000E42764 /* CustomTabBarItemsPreferenceKey.swift in Sources */,
+				9F73BE4B28B3A00E00E42764 /* Home.swift in Sources */,
+				9F73BE4528B39F5B00E42764 /* CustomMainTabBarContainer.swift in Sources */,
 				9F878DAC28A807C900CD6ABE /* Bilancia.swift in Sources */,
 				9F878DAE28A808EF00CD6ABE /* Cerca.swift in Sources */,
+				9F73BE4D28B3A05F00E42764 /* ListaSpesa.swift in Sources */,
+				9F73BE4F28B3A07200E42764 /* RicettaCard.swift in Sources */,
 				9F519FD028AABE4E00276CD1 /* CustomMainTabBar.swift in Sources */,
 				9F878DAA28A807A500CD6ABE /* Categorie.swift in Sources */,
-				9F878DA828A806A300CD6ABE /* Home.swift in Sources */,
 				9F8BBC8A28A6AC380026F02A /* CookMoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
