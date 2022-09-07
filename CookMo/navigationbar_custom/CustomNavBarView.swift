@@ -9,23 +9,31 @@ import SwiftUI
 
 struct CustomNavBarView: View {
     
-    @State var coloreSfondo: Color
+    @State var coloreSfondo: Color 
     @State var coloreTesti: Color
-    @State var titolo: String = ""
+    @State var titolo: String
     @State var coloreTitolo: Color?
-    @State var sottotitolo: String? = ""
+    @State var sottotitolo: String?
     @State var coloreSottotitolo: Color?
     @State var coloreBackButton: Color?
+    
+    //back button e next butto
+    @State var showBackBtn: Bool? = true
+    @State var showNextBtn: Bool? = false
     
     
     var body: some View {
         HStack{
-            backButton
+            if showBackBtn != nil && showBackBtn == true {
+                backButton
+            }
             Spacer()
             textTitles
+            
             Spacer()
-            backButton
-                .opacity(0.0)
+            if showNextBtn != nil && showNextBtn == true {
+                nextButton
+            }
         }
         .padding()
         .accentColor(.white)
@@ -42,6 +50,15 @@ extension CustomNavBarView {
             
         }, label: {
             Image(systemName: "chevron.left")
+                .foregroundColor(coloreBackButton)
+        })
+    }
+    
+    private var nextButton: some View {
+        Button(action: {
+            
+        }, label: {
+            Image(systemName: "chevron.right")
                 .foregroundColor(coloreBackButton)
         })
     }
