@@ -45,12 +45,20 @@ struct CustomNavBarView: View {
 }
 
 extension CustomNavBarView {
+    
     private var backButton: some View {
-        Button(action: {
+        var coloreBkBtn = coloreTesti
+        if let coloreBackButton = coloreBackButton {
+            coloreBkBtn = coloreBackButton
+        }
+        
+        return Button(action: {
             
         }, label: {
+            
             Image(systemName: "chevron.left")
-                .foregroundColor(coloreBackButton)
+            
+            .foregroundColor(coloreBkBtn)
         })
     }
     
@@ -81,7 +89,7 @@ extension CustomNavBarView {
 struct CustomNavBarView_Previews: PreviewProvider {
     static var previews: some View {
         VStack{
-            CustomNavBarView(coloreSfondo: Color.blue, coloreTesti: .white, titolo: "Titolo sono", sottotitolo: "sottotilo da inserire qui")
+            CustomNavBarView(coloreSfondo: Color.blue, coloreTesti: .green, titolo: "Titolo sono", sottotitolo: "sottotilo da inserire qui")
             Spacer()
         }
     }
