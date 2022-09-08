@@ -16,6 +16,7 @@
 		9F73BE4D28B3A05F00E42764 /* ListaSpesa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F73BE4C28B3A05F00E42764 /* ListaSpesa.swift */; };
 		9F73BE4F28B3A07200E42764 /* RicettaCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F73BE4E28B3A07200E42764 /* RicettaCard.swift */; };
 		9F7A4BE728C9F7FC0095F21A /* CustomNavLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A4BE628C9F7FC0095F21A /* CustomNavLink.swift */; };
+		9F7A4BE928CA17100095F21A /* CustomNavBarPreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A4BE828CA17100095F21A /* CustomNavBarPreferenceKeys.swift */; };
 		9F878DAA28A807A500CD6ABE /* Categorie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F878DA928A807A500CD6ABE /* Categorie.swift */; };
 		9F878DAC28A807C900CD6ABE /* Bilancia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F878DAB28A807C900CD6ABE /* Bilancia.swift */; };
 		9F878DAE28A808EF00CD6ABE /* Cerca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F878DAD28A808EF00CD6ABE /* Cerca.swift */; };
@@ -36,6 +37,7 @@
 		9F73BE4C28B3A05F00E42764 /* ListaSpesa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaSpesa.swift; sourceTree = "<group>"; };
 		9F73BE4E28B3A07200E42764 /* RicettaCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RicettaCard.swift; sourceTree = "<group>"; };
 		9F7A4BE628C9F7FC0095F21A /* CustomNavLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavLink.swift; sourceTree = "<group>"; };
+		9F7A4BE828CA17100095F21A /* CustomNavBarPreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarPreferenceKeys.swift; sourceTree = "<group>"; };
 		9F878DA928A807A500CD6ABE /* Categorie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categorie.swift; sourceTree = "<group>"; };
 		9F878DAB28A807C900CD6ABE /* Bilancia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bilancia.swift; sourceTree = "<group>"; };
 		9F878DAD28A808EF00CD6ABE /* Cerca.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cerca.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				9F0A7E4228C8956F000AC091 /* CustomNavBarContainerView.swift */,
 				9F0A7E4428C8C220000AC091 /* CustomNavView.swift */,
 				9F7A4BE628C9F7FC0095F21A /* CustomNavLink.swift */,
+				9F7A4BE828CA17100095F21A /* CustomNavBarPreferenceKeys.swift */,
 			);
 			path = navigationbar_custom;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				9F73BE4528B39F5B00E42764 /* CustomMainTabBarContainer.swift in Sources */,
 				9F7A4BE728C9F7FC0095F21A /* CustomNavLink.swift in Sources */,
 				9F878DAC28A807C900CD6ABE /* Bilancia.swift in Sources */,
+				9F7A4BE928CA17100095F21A /* CustomNavBarPreferenceKeys.swift in Sources */,
 				9F878DAE28A808EF00CD6ABE /* Cerca.swift in Sources */,
 				9F73BE4D28B3A05F00E42764 /* ListaSpesa.swift in Sources */,
 				9F73BE4F28B3A07200E42764 /* RicettaCard.swift in Sources */,
