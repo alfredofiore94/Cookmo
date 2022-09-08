@@ -9,9 +9,9 @@ import SwiftUI
 
 struct CustomNavBarView: View {
     
-    @State var coloreSfondo: Color 
-    @State var coloreTesti: Color
-    @State var titolo: String
+    @State var coloreSfondo: Color = Color.cyan
+    @State var coloreTesti: Color = Color.red
+    @State var titolo: String = "Titolo"
     @State var coloreTitolo: Color?
     @State var sottotitolo: String?
     @State var coloreSottotitolo: Color?
@@ -89,7 +89,7 @@ extension CustomNavBarView {
 struct CustomNavBarView_Previews: PreviewProvider {
     static var previews: some View {
         VStack{
-            CustomNavBarView(coloreSfondo: Color.blue, coloreTesti: .green, titolo: "Titolo sono", sottotitolo: "sottotilo da inserire qui")
+            CustomNavBarView()
             Spacer()
         }
     }
