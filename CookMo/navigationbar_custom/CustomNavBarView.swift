@@ -10,17 +10,18 @@ import SwiftUI
 struct CustomNavBarView: View {
     @Environment(\.presentationMode) var presentationMode
     
-    @State var coloreSfondo: Color = Color.cyan
-    @State var coloreTesti: Color = Color.red
-    @State var titolo: String = "Titolo"
-    @State var coloreTitolo: Color?
-    @State var sottotitolo: String?
-    @State var coloreSottotitolo: Color?
-    @State var coloreBackButton: Color?
+    let titolo: String
+    let coloreSfondo: Color
+    let coloreTesti: Color
+
+    let coloreTitolo: Color?
+    let sottotitolo: String?
+    let coloreSottotitolo: Color?
+    let coloreBackButton: Color?
     
     //back button e next butto
-    @State var showBackBtn: Bool? = true
-    @State var showNextBtn: Bool? = false
+    let showBackBtn: Bool?
+    let showNextBtn: Bool?
     
     
     var body: some View {
@@ -90,7 +91,7 @@ extension CustomNavBarView {
 struct CustomNavBarView_Previews: PreviewProvider {
     static var previews: some View {
         VStack{
-            CustomNavBarView()
+            CustomNavBarView(titolo: "ciao titolo nuovo", coloreSfondo: .gray, coloreTesti: .red, coloreTitolo: nil, sottotitolo: "sottoooo", coloreSottotitolo: nil, coloreBackButton: nil, showBackBtn: nil, showNextBtn: nil)
             Spacer()
         }
     }

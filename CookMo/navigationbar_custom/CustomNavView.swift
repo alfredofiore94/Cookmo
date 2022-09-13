@@ -32,7 +32,17 @@ struct CustomNavView <Content:View> : View {
 struct CustomNavView_Previews: PreviewProvider {
     static var previews: some View {
         CustomNavView(){
-            Color.blue.ignoresSafeArea()
+            ZStack{
+                Color.yellow.ignoresSafeArea()
+                
+                CustomNavLink(destinazione: Text("me ne sono andato")
+                    .customNavigationTitolo("ora siam qua")
+
+                ){
+                    Text("vai la")
+                }
+            }
+            .customNavigationTitolo("Eccoci qua")
         }
     }
 }
