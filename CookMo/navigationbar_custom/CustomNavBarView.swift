@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CustomNavBarView: View {
+    @Environment(\.presentationMode) var presentationMode
     
     @State var coloreSfondo: Color = Color.cyan
     @State var coloreTesti: Color = Color.red
@@ -53,7 +54,7 @@ extension CustomNavBarView {
         }
         
         return Button(action: {
-            
+            presentationMode.wrappedValue.dismiss()
         }, label: {
             
             Image(systemName: "chevron.left")
@@ -64,7 +65,7 @@ extension CustomNavBarView {
     
     private var nextButton: some View {
         Button(action: {
-            
+            presentationMode.wrappedValue.dismiss()
         }, label: {
             Image(systemName: "chevron.right")
                 .foregroundColor(coloreBackButton)
