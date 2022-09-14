@@ -29,7 +29,7 @@ struct CustomMainTabBarContainer<Content:View>: View {
             ZStack{
                 contenuto
             }
-            Spacer()
+            
 
             CustomMainTabBar(listaTabs: tabs, tabSelezionato: $tabSelezionato, coloreSfondo: coloreSfondo, coloreSelezione: coloreSelezione)
 
