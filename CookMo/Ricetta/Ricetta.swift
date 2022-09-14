@@ -23,3 +23,29 @@ struct Ricetta: Hashable {
         self.costo = costo
     }
 }
+
+struct Ingrediente: Hashable {
+    
+    var nome: String
+    var quantita: Float
+    var uMisura: String
+    
+    init(nome: String, quantita: Float, uMisura: String){
+        self.nome = nome
+        self.quantita = quantita
+        self.uMisura = uMisura
+    }
+}
+
+struct StepProcedimento: Hashable {
+    
+    var nome: String?
+    var descrizione: String
+    var immagini: [String]
+    
+    init(nome: String? = nil, descrizione: String, immagini: [String]){
+        self.nome = nome
+        self.descrizione = descrizione
+        self.immagini = immagini
+    }
+}
