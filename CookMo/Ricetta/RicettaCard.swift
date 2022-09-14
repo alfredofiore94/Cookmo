@@ -9,23 +9,19 @@ import SwiftUI
 
 struct RicettaCard: View {
     
-    @State var nomePiatto: String
-    @State var tipoPiatto: String
-    @State var difficolta: String
-    @State var tempoPrep: String
-    @State var costo : String
-    
+    @State var ricetta: Ricetta
     
     var body: some View {
         ZStack{
             RoundedRectangle(cornerRadius: 15)
-            
+                
                 .stroke(ContentView.coloreMoveo, lineWidth: 5)
+                .background(RoundedRectangle(cornerRadius: 15).fill(Color.white))
             HStack(alignment: .top){
                 VStack (alignment: .leading){
-                    Text(self.tipoPiatto)
+                    Text(self.ricetta.tipoPiatto)
                         .font(.system(size: 18))
-                    Text(self.nomePiatto)
+                    Text(self.ricetta.nomePiatto)
                         .padding(.leading)
                         .padding(.bottom)
                         .padding(.top)
@@ -36,9 +32,9 @@ struct RicettaCard: View {
                 Spacer()
                 VStack(alignment: .leading){
 
-                    InfoRicetta(self.difficolta, "chef_img")
-                    InfoRicetta(self.tempoPrep, "timer_img")
-                    InfoRicetta(self.costo, "coin_img")
+                    InfoRicetta(self.ricetta.difficolta, "chef_img")
+                    InfoRicetta(self.ricetta.tempoPrep, "timer_img")
+                    InfoRicetta(self.ricetta.costo, "coin_img")
 
                     
                 }
@@ -54,6 +50,7 @@ struct RicettaCard: View {
         .padding(20)
         .foregroundColor(ContentView.coloreMoveo)
         .font(.custom("SF Pro Text", size: 15))
+        
     }
 }
 
@@ -80,6 +77,14 @@ struct InfoRicetta: View {
 
 struct RicettaCard_Previews: PreviewProvider {
     static var previews: some View {
-        RicettaCard(nomePiatto: "Pandoro", tipoPiatto: "Dolce", difficolta: "Media", tempoPrep: "48 ore", costo: "16,50€")
+        
+        let ricettaTmp = Ricetta(nomePiatto: "Pandoro", tipopiatto: "Dolce", difficolta: "Media", tempoPrep: "48 ore", costo: "16,50€")
+        
+        ZStack{
+            Color.cyan.ignoresSafeArea()
+            RicettaCard(ricetta: ricettaTmp)
+
+        }
+        
     }
 }
