@@ -14,8 +14,9 @@ struct RicettaCard: View {
     var body: some View {
         ZStack{
             RoundedRectangle(cornerRadius: 15)
-            
+                
                 .stroke(ContentView.coloreMoveo, lineWidth: 5)
+                .background(RoundedRectangle(cornerRadius: 15).fill(Color.white))
             HStack(alignment: .top){
                 VStack (alignment: .leading){
                     Text(self.ricetta.tipoPiatto)
@@ -49,6 +50,7 @@ struct RicettaCard: View {
         .padding(20)
         .foregroundColor(ContentView.coloreMoveo)
         .font(.custom("SF Pro Text", size: 15))
+        
     }
 }
 
@@ -78,7 +80,11 @@ struct RicettaCard_Previews: PreviewProvider {
         
         let ricettaTmp = Ricetta(nomePiatto: "Pandoro", tipopiatto: "Dolce", difficolta: "Media", tempoPrep: "48 ore", costo: "16,50€")
         
+        ZStack{
+            Color.cyan.ignoresSafeArea()
+            RicettaCard(ricetta: ricettaTmp)
+
+        }
         
-        RicettaCard(ricetta: ricettaTmp)
     }
 }
