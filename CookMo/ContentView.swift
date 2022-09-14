@@ -23,9 +23,9 @@ struct ContentView: View {
                 .customTabBarItem(tab: CustomTabBarItem(nomeIcona: "bilancia_img", titolo: "Bilancia", colore: Color.white, coloreSfondo: Color.white.opacity(0)), tabSelect: $tabSelezionato)
             Categorie()
                 .customTabBarItem(tab: CustomTabBarItem(nomeIcona: "categorie_img", titolo: "Categorie", colore: Color.white, coloreSfondo: Color.white.opacity(0)), tabSelect: $tabSelezionato)
-            Home()
+           /* Home()
                 .customTabBarItem(tab: CustomTabBarItem(nomeIcona: "home_img", titolo: "Home", colore: Color.white,  coloreSfondo: Color.white.opacity(0)), tabSelect: $tabSelezionato)
-            
+            */
             Cerca()
                 .customTabBarItem(tab: CustomTabBarItem(nomeIcona: "cerca_img", titolo: "Cerca", colore: Color.white,  coloreSfondo: Color.clear), tabSelect: $tabSelezionato)
             ListaSpesa()
