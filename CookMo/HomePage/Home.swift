@@ -12,14 +12,30 @@ struct Home: View {
     @State var ricetteList: [Ricetta]
     
     var body: some View {
-        VStack{
-            ForEach(ricetteList, id: \.self){ ricetta in
-                RicettaCard(ricetta: ricetta)
+        CustomNavView(){
+            ScrollView{
+                VStack{
+                    ForEach(ricetteList, id: \.self){ ricetta in
+                        CustomNavLink(destinazione: Text("me ne sono andato")
+                            .customNavigationTitolo(ricetta.nomePiatto)
+                            .customNavigationColoreSfondo(ContentView.coloreCosmo)
+
+                                        
+                        ){
+                            RicettaCard(ricetta: ricetta)
+                        }
+                        
+                    }
+
+                }
+                .frame(maxHeight: .infinity)
             }
+            .customNavigationTitolo("Cook-mo")
+            .customNavigationColoreSfondo(ContentView.coloreCosmo)
+            .customNavigationShowBackButton(false)
+            .background(.white)
 
         }
-        .frame(maxHeight: .infinity)
-
     }
 }
 

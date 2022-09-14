@@ -120,11 +120,11 @@
 		9F8BBC8828A6AC380026F02A /* CookMo */ = {
 			isa = PBXGroup;
 			children = (
+				9F8BBC8B28A6AC380026F02A /* ContentView.swift */,
+				9F8BBC8928A6AC380026F02A /* CookMoApp.swift */,
 				9F73BE5028B3CA4400E42764 /* navigationbar_custom */,
 				9F73BE4928B39FD800E42764 /* HomePage */,
 				9F519FCE28AABE2300276CD1 /* tabBar_custom */,
-				9F8BBC8928A6AC380026F02A /* CookMoApp.swift */,
-				9F8BBC8B28A6AC380026F02A /* ContentView.swift */,
 				9F878DA928A807A500CD6ABE /* Categorie.swift */,
 				9F878DAB28A807C900CD6ABE /* Bilancia.swift */,
 				9F878DAD28A808EF00CD6ABE /* Cerca.swift */,
@@ -359,7 +359,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CookMo/Preview Content\"";
-				DEVELOPMENT_TEAM = WS3BJ2VR86;
+				DEVELOPMENT_TEAM = J3MC5V8GF2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -372,7 +372,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Alfredo.CookMo;
+				PRODUCT_BUNDLE_IDENTIFIER = text.tezs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -388,7 +388,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CookMo/Preview Content\"";
-				DEVELOPMENT_TEAM = WS3BJ2VR86;
+				DEVELOPMENT_TEAM = J3MC5V8GF2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -401,7 +401,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Alfredo.CookMo;
+				PRODUCT_BUNDLE_IDENTIFIER = text.tezs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
