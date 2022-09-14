@@ -9,7 +9,13 @@ import SwiftUI
 
 struct Home: View {
     var body: some View {
-        Text("Pagina home")
+        VStack{
+            Text("Pagina home").frame(maxWidth: .infinity)
+            
+
+        }
+        .frame(maxHeight: .infinity)
+
     }
 }
 
