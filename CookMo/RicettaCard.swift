@@ -9,22 +9,12 @@ import SwiftUI
 
 struct RicettaCard: View {
     
-    var nomePiatto: String
-    var tipoPiatto: String
-    var difficolta: String
-    var tempoPrep: String
-    var costo : String
+    @State var nomePiatto: String
+    @State var tipoPiatto: String
+    @State var difficolta: String
+    @State var tempoPrep: String
+    @State var costo : String
     
-    
-    init(nomePiatto: String, tipoPiatto: String, difficolta: String, tempoPrep: String, costo : String){
-        
-        self.nomePiatto = nomePiatto
-        self.tipoPiatto = tipoPiatto
-        self.difficolta = difficolta
-        self.tempoPrep = tempoPrep
-        self.costo = costo
-        
-    }
     
     var body: some View {
         ZStack{
