@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct Ricetta: Hashable {
+struct Ricetta: Identifiable {
     
+    let id: String = UUID().uuidString
     var nomePiatto: String
     var tipoPiatto: String
     var difficolta: String
@@ -26,6 +27,7 @@ struct Ricetta: Hashable {
 
 struct Ingrediente: Hashable {
     
+    let id: String = UUID().uuidString
     var nome: String
     var quantita: Float
     var uMisura: String
@@ -39,6 +41,7 @@ struct Ingrediente: Hashable {
 
 struct StepProcedimento: Hashable {
     
+    let id: String = UUID().uuidString
     var nome: String?
     var descrizione: String
     var immagini: [String]

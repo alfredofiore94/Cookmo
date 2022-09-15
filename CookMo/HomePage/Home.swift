@@ -15,7 +15,7 @@ struct Home: View {
         CustomNavView(){
             ScrollView{
                 VStack{
-                    ForEach(ricetteList, id: \.self){ ricetta in
+                    ForEach(ricetteList){ ricetta in
                         CustomNavLink(destinazione:
                                         Dettaglioricetta()
                             .customNavigationTitolo(ricetta.nomePiatto)
