@@ -97,8 +97,8 @@
 		9F86FE9C28D1CB8500874FD8 /* Ricetta */ = {
 			isa = PBXGroup;
 			children = (
+				9FDDDD2328D30C2500EED9C4 /* model */,
 				9F73BE4E28B3A07200E42764 /* RicettaCard.swift */,
-				9F86FE9D28D1CB9500874FD8 /* Ricetta.swift */,
 				9F49E20128D1FA3800A698FF /* Dettaglioricetta.swift */,
 			);
 			path = Ricetta;
@@ -145,6 +145,14 @@
 				9F8BBC9028A6AC3A0026F02A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9FDDDD2328D30C2500EED9C4 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				9F86FE9D28D1CB9500874FD8 /* Ricetta.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -31,11 +31,13 @@ struct Ingrediente: Hashable {
     var nome: String
     var quantita: Float
     var uMisura: String
+    var isSelezionato: Bool
     
-    init(nome: String, quantita: Float, uMisura: String){
+    init(nome: String, quantita: Float, uMisura: String, isSelezionato: Bool){
         self.nome = nome
         self.quantita = quantita
         self.uMisura = uMisura
+        self.isSelezionato = isSelezionato
     }
 }
 
