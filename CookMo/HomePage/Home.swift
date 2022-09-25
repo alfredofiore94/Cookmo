@@ -17,7 +17,7 @@ struct Home: View {
                 VStack{
                     ForEach(ricetteList){ ricetta in
                         CustomNavLink(destinazione:
-                                        Dettaglioricetta()
+                                        Dettaglioricetta(ricetta: ricetta)
                             .customNavigationTitolo(ricetta.nomePiatto)
                             .customNavigationColoreSfondo(ContentView.coloreCosmo)
 
@@ -45,8 +45,14 @@ struct Home_Previews: PreviewProvider {
         
         var ricettaLista: [Ricetta] = []
         
-        ricettaLista.append(Ricetta(nomePiatto: "pasta", tipopiatto: "primo", difficolta: "facile", tempoPrep: "30 ore", costo: "economico"))
-        ricettaLista.append(Ricetta(nomePiatto: "carne", tipopiatto: "secondo", difficolta: "difficile", tempoPrep: "12 ore", costo: "costoso"))
+        var listaIngr: [Ingrediente] = [Ingrediente(nome: "zucchero", quantita: 23.5, uMisura: "g", isSelezionato: false)]
+        
+        let count = 1...10
+        for _ in count { listaIngr.append(Ingrediente(nome: "farina", quantita: 23.5, uMisura: "g", isSelezionato: false))
+        }
+        
+        ricettaLista.append(Ricetta(nomePiatto: "pasta", tipopiatto: "primo", difficolta: "facile", tempoPrep: "30 ore", costo: "economico", listaIngredinti: listaIngr))
+        ricettaLista.append(Ricetta(nomePiatto: "carne", tipopiatto: "secondo", difficolta: "difficile", tempoPrep: "12 ore", costo: "costoso", listaIngredinti: listaIngr))
         
         return Home(ricetteList: ricettaLista)
     }

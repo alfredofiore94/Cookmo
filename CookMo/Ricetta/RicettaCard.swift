@@ -78,9 +78,15 @@ struct InfoRicetta: View {
 struct RicettaCard_Previews: PreviewProvider {
     static var previews: some View {
         
-        let ricettaTmp = Ricetta(nomePiatto: "Pandoro", tipopiatto: "Dolce", difficolta: "Media", tempoPrep: "48 ore", costo: "16,50€")
+        var listaIngr: [Ingrediente] = [Ingrediente(nome: "zucchero", quantita: 23.5, uMisura: "g", isSelezionato: false)]
         
-        ZStack{
+        let count = 1...10
+        
+        for _ in count { listaIngr.append(Ingrediente(nome: "farina", quantita: 23.5, uMisura: "g", isSelezionato: false))
+        }
+        
+        let ricettaTmp = Ricetta(nomePiatto: "Pandoro", tipopiatto: "Dolce", difficolta: "Media", tempoPrep: "48 ore", costo: "16,50€", listaIngredinti: listaIngr)
+        return ZStack{
             Color.cyan.ignoresSafeArea()
             RicettaCard(ricetta: ricettaTmp)
 

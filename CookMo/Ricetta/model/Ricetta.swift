@@ -15,17 +15,19 @@ struct Ricetta: Identifiable {
     var difficolta: String
     var tempoPrep: String
     var costo : String
+    var listaIngredienti: [Ingrediente]
     
-    init(nomePiatto: String, tipopiatto: String, difficolta: String, tempoPrep: String, costo: String){
+    init(nomePiatto: String, tipopiatto: String, difficolta: String, tempoPrep: String, costo: String, listaIngredinti: [Ingrediente]){
         self.nomePiatto = nomePiatto
         self.tipoPiatto = tipopiatto
         self.difficolta = difficolta
         self.tempoPrep = tempoPrep
         self.costo = costo
+        self.listaIngredienti = listaIngredinti
     }
 }
 
-struct Ingrediente: Hashable {
+struct Ingrediente: Identifiable {
     
     let id: String = UUID().uuidString
     var nome: String

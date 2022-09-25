@@ -11,6 +11,7 @@
 		9F0A7E4528C8C220000AC091 /* CustomNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0A7E4428C8C220000AC091 /* CustomNavView.swift */; };
 		9F49E20228D1FA3800A698FF /* Dettaglioricetta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F49E20128D1FA3800A698FF /* Dettaglioricetta.swift */; };
 		9F519FD028AABE4E00276CD1 /* CustomMainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F519FCF28AABE4E00276CD1 /* CustomMainTabBar.swift */; };
+		9F64960D28E0AF010025890F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F64960C28E0AF010025890F /* Utils.swift */; };
 		9F73BE4528B39F5B00E42764 /* CustomMainTabBarContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F73BE4428B39F5B00E42764 /* CustomMainTabBarContainer.swift */; };
 		9F73BE4728B39FA000E42764 /* CustomTabBarItemsPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F73BE4628B39FA000E42764 /* CustomTabBarItemsPreferenceKey.swift */; };
 		9F73BE4B28B3A00E00E42764 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F73BE4A28B3A00E00E42764 /* Home.swift */; };
@@ -34,6 +35,7 @@
 		9F0A7E4428C8C220000AC091 /* CustomNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavView.swift; sourceTree = "<group>"; };
 		9F49E20128D1FA3800A698FF /* Dettaglioricetta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dettaglioricetta.swift; sourceTree = "<group>"; };
 		9F519FCF28AABE4E00276CD1 /* CustomMainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMainTabBar.swift; sourceTree = "<group>"; };
+		9F64960C28E0AF010025890F /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		9F73BE4428B39F5B00E42764 /* CustomMainTabBarContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMainTabBarContainer.swift; sourceTree = "<group>"; };
 		9F73BE4628B39FA000E42764 /* CustomTabBarItemsPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarItemsPreferenceKey.swift; sourceTree = "<group>"; };
 		9F73BE4A28B3A00E00E42764 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				9F8BBC8828A6AC380026F02A /* CookMo */,
+				9F64960C28E0AF010025890F /* Utils.swift */,
 				9F8BBC8728A6AC380026F02A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				9F49E20228D1FA3800A698FF /* Dettaglioricetta.swift in Sources */,
 				9F8BBC8A28A6AC380026F02A /* CookMoApp.swift in Sources */,
 				9F86FE9E28D1CB9500874FD8 /* Ricetta.swift in Sources */,
+				9F64960D28E0AF010025890F /* Utils.swift in Sources */,
 				9F0A7E4528C8C220000AC091 /* CustomNavView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

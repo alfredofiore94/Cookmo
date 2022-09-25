@@ -9,28 +9,27 @@ import SwiftUI
 
 struct Dettaglioricetta: View {
 
-    @State var editIngr: Bool = false
-    @State private var contentSize: CGSize = .zero
+    
+    @State var ricetta: Ricetta
     var body: some View {
         ScrollView{
             VStack{
                 HStack{
                     Text("Ingredienti")
-                        .font(.system(size: 30))
+                        .font(.system(size: 40))
                         .padding()
                     Spacer()
                     Button(action: {
-                        self.editIngr = !self.editIngr
+
                     }, label: {
                         Image("edit_img")
                             .renderingMode(.template)
                             .padding()
-
                         }
                     )
                     
                 }
-                ListaIngredienti()
+                ListaIngredienti
                     
             }
             .background(.white)
@@ -39,14 +38,20 @@ struct Dettaglioricetta: View {
     }
 }
 
-
-
-struct ListaIngredienti: View {
-    var body: some View {
+extension Dettaglioricetta {
+    private var ListaIngredienti: some View {
+        
         Group {
-            ForEach(0 ..< 10) { i in
+            ForEach(ricetta.listaIngredienti) { ingr in
                 HStack{
-                    Text("Item: \(i)")
+                    HStack{
+                        Text(ingr.nome)
+                            
+                    }
+                    .frame(width: 200)
+                    Spacer()
+                    Text(Utils.toStringQuantita(quantita: ingr.quantita))
+                    Text(ingr.uMisura)
                     Spacer()
                 }
                 .padding(.top, 5)
@@ -57,8 +62,18 @@ struct ListaIngredienti: View {
     }
 }
 
+
+
 struct Dettaglioricetta_Previews: PreviewProvider {
     static var previews: some View {
-        Dettaglioricetta()
+        
+        var listaIngr: [Ingrediente] = [Ingrediente(nome: "zucchero", quantita: 23.5, uMisura: "g", isSelezionato: false)]
+        
+        let count = 1...100
+        for i in count { listaIngr.append(Ingrediente(nome: "farina \(i)", quantita: 23.5 * Float(i), uMisura: "g", isSelezionato: false))
+        }
+        let ricetta = Ricetta(nomePiatto: "pasta", tipopiatto: "primo", difficolta: "facile", tempoPrep: "30 ore", costo: "economico", listaIngredinti: listaIngr)
+        
+        return Dettaglioricetta(ricetta: ricetta)
     }
 }
